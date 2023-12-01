@@ -21,7 +21,7 @@ Import the database schema from the provided SQL file (computers.sql).
 Start the Docker Container:
 docker run -p 8080:80 -d --name your-container-name your-image-name(any port of your choice)
 Usage
-Open the browser and navigate to http://localhost:8080/login.php.
+Open the browser and navigate to http://localhost:5555/login.php.
 Log in with your username and password.
 Admins will be redirected to index.php where they can manage entries
 Users will have access to their respective dashboard.
