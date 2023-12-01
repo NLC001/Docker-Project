@@ -12,12 +12,12 @@ Before you begin, ensure you have met the following requirements:
 Docker installed on your local machine.
 Installation
 Clone the repository:
-git clone https://github.com/NLC001/Docker-Project
+git clone https://github.com/NLC001/Docker-Project or downlosd the file
 Build the Docker Image:
 cd your-repo
 docker build -t your-image-name .
 Configure the Database:
-Import the database schema from the provided SQL file (database.sql).
+Import the database schema from the provided SQL file (computers.sql).
 Start the Docker Container:
 docker run -p 8080:80 -d --name your-container-name your-image-name(any port of your choice)
 Usage
