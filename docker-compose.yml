@@ -1,0 +1,38 @@
+## YAML Template.
+---
+version: '3.8'
+services:
+  mycomputersystem:
+    container_name: mycomputersysytem
+    # path to dockerfile
+    build: .
+    # mapping ports
+    ports:
+      - "5555:80"
+    environment:
+      - "MYSQL_HOST=mydb"
+      - "MYSQL_PASSWORD=6%b48fCbUNZPfnQ"
+  database:
+    # name
+    container_name: mydb
+    # image to fetch from docker hub
+    image: mysql:8.2.0
+    # Environment variables for startup script
+    # container will use these variables
+    # to start the container with these define variables.
+    environment:
+      - "MYSQL_ROOT_PASSWORD=6%b48fCbUNZPfnQ"
+    volumes:
+      - my-data-volume:/var/lib/mysql
+  phpmyadmin:
+    # name
+    container_name: phpmyadmin
+    # image
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=6%b48fCbUNZPfnQ"
+      - "PMA_HOST=mydb"
+volumes:
+  my-data-volume:
