@@ -3,7 +3,7 @@
 version: '3.8'
 services:
   mycomputersystem:
-    container_name: mycomputersysytem
+    container_name: mycomputersystem
     # path to dockerfile
     build: .
     # mapping ports
