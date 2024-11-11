@@ -74,3 +74,12 @@ User: Contains essential fields for all users.
 Admin: Extends the User entity with admin-specific attributes.
 Relationships: Defines connections between users and their roles, as well as CRUD functionalities managed by admins.
 
+
+GROUP MEMBERS
+NMOSE LUCKY - 40703
+YANIKE CLAVINA - 41395
+BIRUK ZENEBE - 41832
+KEVIN KYAMBADDE MUYANJA - 41697
+SARAH AHMED - 41569
+MITCHELL NASUKU -39770
+MUNASHE CHARE - 37829
