@@ -19,7 +19,7 @@ git clone https://github.com/NLC001/Docker-Project or download the file
 
 Build the Docker Image:
 cd your-repo
-docker build -t your-image-name .
+docker build -t your-image-name.
 
 Configure the Database:
 Import the database schema from the provided SQL file (computers.sql).
@@ -43,7 +43,7 @@ Actors:
 User: Can log in and access their dashboard.
 Admin: Has access to additional functionalities, including user management.
 Use Cases:
-Log In: Both User and Admin login to access the application.
+Log In: Both User and Admin log in to access the application.
 View Dashboard: After login, users are redirected to different dashboards based on their role.
 Perform CRUD Operations: Admins have full CRUD capabilities to manage user records.
 
@@ -58,7 +58,7 @@ CRUD: Provides Create, Read, Update, and Delete operations for user records.
 3. Sequence Diagram
 This diagram shows the step-by-step sequence of actions for the application’s main functionalities:
 User Login:
-Users enter their credentials, which are verified by the Authentication module through the Database.
+Users enter their credentials, which are verified by the authentication module through the database.
 Admin CRUD Operations:
 After login, Admins can perform CRUD operations to manage user records, with each action interacting with the Database to retrieve or modify data.
 
@@ -72,14 +72,4 @@ Web Server and Database Server: Both are isolated in the container, allowing eas
 The ER Diagram provides an overview of the database schema, showing the relationships between tables:
 User: Contains essential fields for all users.
 Admin: Extends the User entity with admin-specific attributes.
-Relationships: Defines connections between users and their roles, as well as CRUD functionalities managed by admins.
-
-
-GROUP MEMBERS
-NMOSE LUCKY - 40703
-YANIKE CLAVINA - 41395
-BIRUK ZENEBE - 41832
-KEVIN KYAMBADDE MUYANJA - 41697
-SARAH AHMED - 41569
-MITCHELL NASUKU -39770
-MUNASHE CHARE - 37829
+Relationships: Defines connections between users and their roles and CRUD functionalities managed by admins.
